@@ -1,0 +1,142 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+% Make lists more compact
+% \setlist[itemize]{itemsep=0.25ex, topsep=0.25ex, parsep=0ex, partopsep=0ex}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{setspace}
+% Silence underfull hbox warnings and improve line breaking
+\hbadness=10000
+\emergencystretch=3em
+
+% Page margins
+\geometry{a4paper, margin=1in}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    pdftitle={Resume - Do Van Duy},
+    pdfpagemode=FullScreen,
+}
+
+% Section title format
+\titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3ex}{2ex}
+
+% Subsection title format
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{1ex}{1ex}
+
+% Document begins
+\begin{document}
+
+% Header with left-aligned name and right-aligned contact info
+\noindent
+\begin{minipage}[t]{0.60\textwidth}
+    \Huge\scshape Do Van Duy
+\end{minipage}%
+\begin{minipage}[t]{0.40\textwidth}
+    \raggedleft
+    \normalsize
+    \href{mailto:hello@duyne.me}{Email: hello@duyne.me}\\
+    \href{tel:+84971210898}{Phone: +84 971210898}\\
+    \href{https://duyne.me}{Blog: duyne.me}\\
+    \href{https://github.com/duyhenryerz}{GitHub: duyhenryer}\\
+    \href{https://linkedin.com/in/duyne}{LinkedIn: Duy nè}
+\end{minipage}
+\vspace{0.75em}
+
+
+% Overview
+\section{Overview}
+\begingroup
+\setstretch{1.2}
+Over 5 years of dedicated DevOps experience, including proficiency in cloud environments like AWS \& GCP. A forward-thinking DevOps Engineer with a robust background in optimizing operating systems within agile frameworks. Specializing in the strategic deployment of technologies like Terraform, AWS, Kubernetes, and GitOps principles, I ensure scalable, efficient, and innovative IT infrastructures. My expertise extends to automating workflows, crafting CI/CD pipelines, and integrating GitOps for enhanced operational clarity and consistency.
+\endgroup
+
+% Skills Summary
+\section{Skills Summary}
+\begin{itemize}[leftmargin=*, label={}]
+    \item \textbf{Languages:} Python, Bash, Golang (basic)
+    \item \textbf{Infrastructure \& Platform:} Kubernetes, Docker and GitOps(fluxcd)
+    \item \textbf{Monitoring \& Logging:} VictoriaMetrics, Prometheus, Grafana, Loki, Graylog
+    \item \textbf{CI/CD:} GitHub Actions, Jenkins, GitLab CI
+    \item \textbf{Storage Engines:} Elasticsearch, Kafka, RabbitMQ, Redis, PostgreSQL, ScyllaDB, MySQL, MongoDB
+    \item \textbf{Cloud \& Tools:} AWS, GCP, Terraform, Git, Cloudflare, Temporal, Vault, KEDA,
+    \item \textbf{Networking:} TCP/IP, DNS, DHCP, SSH, Load Balancer, VPN, VPC, telnet.
+    \item \textbf{Soft Skills:} Reponsibility, Problem Solving, Communication, Teamwork, Time Management    
+\end{itemize}
+
+% Work Experience
+\section{Work Experience}
+\textbf{\href{https://www.opswat.com/}{Opswat}} \hfill {\small\textit{Onsite / Ho Chi Minh, VietNam}} \\
+\textit{Site Reliability Engineer II} \hfill {\small\textit{December 2024 - Now}}
+\begin{itemize}[leftmargin=*]
+    \item Managed multi-environment infrastructure using Terraform and GitOps(fluxcd)
+    \item Built observability stack with VictoriaMetrics and Loki for unified metrics and log monitoring.
+    \item Operated core data services including MongoDB, Redis, and RabbitMQ for application storage, caching, and messaging.
+    \item Networked with TCP/IP, DNS, DHCP, SSH, Load Balancer, VPN, VPC, telnet, etc.
+    
+    \item Tracked and managed tasks with Jira/Confluence.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{\href{https://www.chotot.com/}{ChoTot}} \hfill {\small\textit{Onsite / Ho Chi Minh, VietNam}} \\
+\textit{DevOps Engineer} \hfill {\small\textit{July 2022 - December 2022}}
+\begin{itemize}[leftmargin=*]
+    \item Migrated On-Premise staging to GCP with optimized databases and storage for cost efficiency.
+    \item Modernized Kubernetes clusters and leveraged GKE Spot workloads to achieve a 30\% reduction in compute costs without service disruption.
+    \item Managed CI/CD pipelines with GitHub Actions, contributing reusable workflows.
+    \item Managed server-side and ingress technologies including Nginx, Nginx Ingress, and Kong.
+    \item Utilized Terraform for infrastructure as code on GCP and AWS.
+    \item Hands-on with databases: MySQL, MongoDB, Redis, PostgreSQL, ScyllaDB.
+    \item Developed and contributed to Helm charts for managing applications.
+    \item Replaced Bastion hosts with Cloudflare Zero Trust, improving access control.
+    \item Implemented monitoring and logging with Prometheus, Grafana, and VictoriaMetrics.
+    \item Defined SLI/SLOs to measure and enhance reli\-abil\-ity, la\-ten\-cy, and avail\-abil\-ity (HTTP/\-gRPC).
+    \item Networking experience with TCP/IP, DNS, DHCP, SSH.
+    \item Responded to incidents, troubleshot system issues, and provided night support to ensure smooth releases and operations.
+    \item Tracked and managed tasks with Jira/Confluence.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{\href{https://spores.app/}{Spores}} \hfill {\small\textit{Remote / Ho Chi Minh, VietNam}} \\
+\textit{DevOps Engineer} \hfill {\small\textit{October 2021 - July 2022}}
+\begin{itemize}[leftmargin=*]
+    \item Managed and deployed applications across Development, Testnet, and Mainnet environments.
+    \item Built CI/CD pipelines with GitHub Actions, CodeCommit, and ArgoCD for GitOps.
+    \item Used Terraform for AWS infrastructure and Graph\-Node for block\-chain data in\-dex\-ing (Ethereum, BSC, Polygon).
+    \item Hands-on experience with databases such as MySQL, Redis, PostgreSQL, and AWS services.
+    \item Deployed and maintained monitoring and logging tools such as Prometheus, Grafana, and Loki.
+    \item Tracked and managed tasks with Jira/Confluence.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{\href{https://firegroup.io/}{FireGroup}} \hfill {\small\textit{Onsite / Ho Chi Minh, VietNam}} \\
+\textit{System Engineer} \hfill {\small\textit{May 2020 - October 2021}}
+\begin{itemize}[leftmargin=*]
+    \item Migrated legacy systems to AWS, building new projects from scratch.
+    \item Designed CI/CD pipelines using Jenkins, GitHub Actions, and GitLab CI.
+    \item Managed GitOps deployments with Helm and FluxCD on EKS.
+    \item Utilized Terraform for infrastructure as code on AWS across staging, UAT, and production.
+    \item Hands-on with databases: MySQL, MongoDB, Redis, PostgreSQL; and a broad set of AWS services.
+    \item Operated server-side technologies such as Nginx; cloud-native ingress like Nginx Ingress and Kong Ingress.
+    \item Implemented monitoring and logging using the EFK stack, Prometheus \& Grafana, and AWS CloudWatch.
+    \item Tracked and managed tasks with Jira/Confluence.
+\end{itemize}
+
+
+% Education
+\section{Education}
+\textbf{Ton Duc Thang University} \hfill Ho Chi Minh, VietNam \\
+\textit{\textbf{Bachelor of Science in Computer Science}} \hfill August 2015 - October 2021 \\
+\textit{Courses:} Data Structures, Networking, Operating System, Database, Multimedia Programming, Software Engineering
+
+\end{document}
