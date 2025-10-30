@@ -25,25 +25,12 @@ latex-resume/
 ```
 
 ## Usage
-### Option 1: Using Make (recommended)
-
-1. Change into the project directory:
-    ```bash
-    cd latex-resume
-    ```
-2. Build the PDF:
-    ```bash
-    make
-    ```
-    This compiles `resume.tex` and writes `output/resume.pdf`.
-3. Open the PDF:
-    ```bash
-    make view
-    ```
-4. Clean generated files:
-    ```bash
-    make clean
-    ```
+### Option 1: Using Make
+Build the PDF:
+```bash
+make
+```
+This compiles `resume.tex` and writes `output/resume.pdf`.
 
 ### Option 2: Manual compile
 
